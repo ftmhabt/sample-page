@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navigation*/
+nav ul{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    font-size: 10px;
+    justify-self: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    list-style-type: none;
+    font-size: small;
+}
+
+.logo{
+    font-family: serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+a:hover{
+    color:#C9995B ;
+}
+
+.logo:hover{
+    color: black;
+}
+
+/*home section*/
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 5% 10% 5%;
+}
+
+.home-photo{
+ width: 60%;
+ height: 80vh;
+} 
+
+.featured{
+    z-index:  -99999;
+    position: absolute;
+    background-color: #F5EEE5;
+    width: 40%;
+    height: 80%;
+    left: -15%;
+    top: -15%;
+}
+
+.featured-txt{
+    position: absolute;
+    left: -12%;
+    top: 90%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    transform: rotate(-90deg);
+}
+
+
+.featured-photo{
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+
+.featured-photo img{
+    max-width: 85%;
+    height: auto;
+}
+
+.home-txt{
+    width: 30%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.home-txt h3{
+    text-transform: uppercase;
+}
+
+.home-txt p{
+
+}
+
+.btn{
+    background-color: #C9995B;
+    color: blanchedalmond;
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 200px;
+    padding: .5em 1.5em;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: blanchedalmond;
+}
+
+/*faves section*/
+.faves{
+    background-color: #C9995B;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: #FCFAF7;
+    padding: 3%;
+}
+
+.holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.faves-item{
+    width: 20%;
+}
+
+.holder img{
+    max-width: 90%;
+    height: auto;
+}
+
+.faves-item figcaption{
+    padding-top: 20px;
+}
+
+figure{
+    text-align: center;
+}
+
+.a-fave{
+    font-family: sans-serif;
+    color: #FCFAF7;
+}
+
+.a-fave:hover{
+    color: black;
+}
+
+/*latests section*/
+.latest{
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.title{
+    height: 40px;
+    background-color: #F5EEE5;
+    margin: 5% 15px;
+    font-size: 40px;
+    text-align: right;
+}
+
+.latest-item{
+    width: 30%;
+}
+
+.latest-item img{
+    width: 100%;
+}
+
+.bc{
+    background-color: white;
+    top: 10px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.latest-holder{
+    justify-content: space-between;
+}
+
+.a-late{
+    font-family: sans-serif;
+    color: black;
+    padding: 0;
+}
+
+figure p{
+    padding: 10px 10px 20px 10px;
+}
+
+.latest-item figcaption{
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .h-link{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home-photo{
+        width: 90%;
+        height: 600px;
+       } 
+
+    .home-txt{
+        width: 80%;
+        height: 40vh;
+        padding-top: 0;
+    }
+
+    .home{
+        padding-bottom: 0;
+    }
+    
+    .holder{
+        
+    flex-wrap: wrap
+    }
+    
+.faves-item{
+    width: 40%;
+    margin-bottom: 5%;
+}
+}
+@media only screen and (max-width: 806px){
+    .home-photo{
+        height: 550px;
+    }
+
+    .latest-item{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (max-width: 740px){
+    .home-photo{
+        height: 450px;
+    }
+
+}
+@media only screen and (max-width: 630px){
+    .home-photo{
+        height: 400px;
+    }
+
+    .featured-txt{
+        left: -26%;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    .home-photo{
+        height: 350px;
+    }
+
+    .featured-txt{
+     font-size: 1.2em;
+    }
+
+    .faves-item{
+        width: 60%;
+    }
+    .latest-item{
+        width: 70%;
+    }
+    .latest-holder{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 446px){
+    .home-photo{
+        height: 300px;
+    }
+
+    
+    .featured-txt{
+     font-size: 1em;
+    }
+
+}
+@media only screen and (max-width: 380px){
+    .home-photo{
+        height: 250px;
+    }
+
+}
